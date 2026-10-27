@@ -140,13 +140,16 @@ b p {
   font-size: 19px;
   text-align: center;
   float: none;
+  gap: 20px;
 }
 
 .BBB video {
   display: block;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   height: auto;
+  margin: 20px auto 20px;
+}
 }
 
 .Bb {
