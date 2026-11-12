@@ -150,7 +150,6 @@ b p {
   height: auto;
   margin: 20px auto 20px;
 }
-}
 
 .Bb {
   width: 100%;
@@ -1286,4 +1285,65 @@ video {
     max-height: calc(100vh - 80px);
     max-height: calc(100dvh - 80px);
   }
+}
+
+.carruselG
+
+{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 77, 43, 0.8);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10000;
+}
+
+#fotoC
+{
+  max-width: 75%;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+#anterior, #siguiente
+{
+  background-color:#ffd700;
+  color:  #144d2b;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#anterior:hover, #siguiente:hover
+{
+
+  background-color:#228b22;
+  color: #ffd700;
+}
+
+#CerrarC
+{
+
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: rgb(230, 72, 72);
+  font-size: 35px;
+  cursor: pointer;
+
+}
+
+#CerrarC:hover {
+  color: rgb(215, 104, 104);
 }
