@@ -20,6 +20,64 @@ const BotHAL = document.getElementById("BotHAL");
 const BotAR14 = document.getElementById("BotAR14");
 const BotAR18 = document.getElementById("BotAR18");
 const BotGS = document.getElementById("BotGS");
+const BotEnU = document.getElementById("BotEnU");
+
+const carruselG = document.getElementById("carruselG");
+const CerrarC = document.getElementById("CerrarC");
+const anterior = document.getElementById("anterior");
+const siguiente = document.getElementById("siguiente");
+const fotoC = document.getElementById("fotoC");
+
+let fotosC = [];
+let indiceC = 0;
+
+const fotosUtil = 
+[
+    "../res/res_utiles/U1.jpg",
+    "../res/res_utiles/U2.jpg",
+    "../res/res_utiles/U3.jpg",
+    "../res/res_utiles/U4.jpg",
+    "../res/res_utiles/U5.jpg"
+];
+
+const fotosAfil = 
+[
+
+    "res/res_acAfi/A1.jpg",
+    ""
+
+];
+
+function Mfoto() {
+    if (fotosC.length === 0) return;
+
+    fotoC.src = fotosC[indiceC];
+}
+
+siguiente.addEventListener("click", () => {
+    if (fotosC.length === 0) return;
+
+    indiceC = (indiceC + 1) % fotosC.length;
+    Mfoto();
+});
+
+anterior.addEventListener("click", () => {
+    if (fotosC.length === 0) return;
+
+    indiceC = (indiceC - 1 + fotosC.length) % fotosC.length;
+    Mfoto();
+});
+
+function AbriC(fotos) {
+    if (fotos.length === 0) return;
+
+    fotosC = fotos;
+    indiceC = 0;
+
+    Mfoto();
+    carruselG.style.display = "flex";
+}
+
 
     BotE?.addEventListener("click", () => {
         imagen.src = "../res/0.png"; 
@@ -111,8 +169,18 @@ const BotGS = document.getElementById("BotGS");
         imagenGrande.style.display = "flex";
     })
 
+     BotEnU?.addEventListener("click", () => {
+       AbriC(fotosUtil);
+    })
+
+     BotPrA?.addEventListener("click", () => {
+       AbriC(fotosUtil);
+    })
+
     cerrar.addEventListener("click", () => {
         imagenGrande.style.display = "none";
     });
 
-     
+    CerrarC.addEventListener("click", () => {
+        carruselG.style.display = "none";
+    });
