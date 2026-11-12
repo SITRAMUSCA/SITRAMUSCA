@@ -43,8 +43,13 @@ const fotosUtil =
 const fotosAfil = 
 [
 
-    "res/res_acAfi/A1.jpg",
-    ""
+    "../res/res_acAfi/A1.jpg",
+    "../res/res_acAfi/A2.jpg", 
+    "../res/res_acAfi/A3.jpg",
+    "../res/res_acAfi/A4.jpg",
+    "../res/res_acAfi/A5.jpg",
+    "../res/res_acAfi/A6.jpg",
+    "../res/res_acAfi/A7.jpg"
 
 ];
 
