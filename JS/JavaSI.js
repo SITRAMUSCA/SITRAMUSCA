@@ -20,7 +20,6 @@ const BotHAL = document.getElementById("BotHAL");
 const BotAR14 = document.getElementById("BotAR14");
 const BotAR18 = document.getElementById("BotAR18");
 const BotGS = document.getElementById("BotGS");
-const BotEnU = document.getElementById("BotEnU");
 
 const carruselG = document.getElementById("carruselG");
 const CerrarC = document.getElementById("CerrarC");
@@ -50,6 +49,16 @@ const fotosAfil =
     "../res/res_acAfi/A5.jpg",
     "../res/res_acAfi/A6.jpg",
     "../res/res_acAfi/A7.jpg"
+
+];
+
+const fotosacNI= 
+[
+
+    "../res/res_acNI/acNi 1.jpg",
+    "../res/res_acNI/acNi 2.jpg",
+    "../res/res_acNI/acNi 3.jpg",
+    "../res/res_acNI/acNi 4.jpg"
 
 ];
 
@@ -180,6 +189,10 @@ function AbriC(fotos) {
 
      BotPrA?.addEventListener("click", () => {
        AbriC(fotosAfil);
+    })
+
+      BotAcNi?.addEventListener("click", () => {
+       AbriC(fotosacNI);
     })
 
     cerrar.addEventListener("click", () => {
