@@ -179,7 +179,7 @@ function AbriC(fotos) {
     })
 
      BotPrA?.addEventListener("click", () => {
-       AbriC(fotosUtil);
+       AbriC(fotosAfil);
     })
 
     cerrar.addEventListener("click", () => {
