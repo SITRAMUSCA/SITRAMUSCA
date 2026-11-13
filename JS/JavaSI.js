@@ -20,6 +20,9 @@ const BotHAL = document.getElementById("BotHAL");
 const BotAR14 = document.getElementById("BotAR14");
 const BotAR18 = document.getElementById("BotAR18");
 const BotGS = document.getElementById("BotGS");
+const BotEnU = document.getElementById("BotEnU");
+const BotPrA = document.getElementById("BotPrA");
+const BotAcNi = document.getElementById("BotAcNi");
 
 const carruselG = document.getElementById("carruselG");
 const CerrarC = document.getElementById("CerrarC");
@@ -68,14 +71,15 @@ function Mfoto() {
     fotoC.src = fotosC[indiceC];
 }
 
-siguiente.addEventListener("click", () => {
+siguiente?.addEventListener("click", () => {
+
     if (fotosC.length === 0) return;
 
     indiceC = (indiceC + 1) % fotosC.length;
     Mfoto();
 });
 
-anterior.addEventListener("click", () => {
+anterior?.addEventListener("click", () => {
     if (fotosC.length === 0) return;
 
     indiceC = (indiceC - 1 + fotosC.length) % fotosC.length;
@@ -191,14 +195,14 @@ function AbriC(fotos) {
        AbriC(fotosAfil);
     })
 
-      BotAcNi?.addEventListener("click", () => {
+     BotAcNi?.addEventListener("click", () => {
        AbriC(fotosacNI);
     })
 
-    cerrar.addEventListener("click", () => {
+    cerrar?.addEventListener("click", () => {
         imagenGrande.style.display = "none";
     });
 
-    CerrarC.addEventListener("click", () => {
+    CerrarC?.addEventListener("click", () => {
         carruselG.style.display = "none";
     });
