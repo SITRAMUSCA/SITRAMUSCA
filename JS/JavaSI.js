@@ -134,7 +134,7 @@ function AbriC(fotos) {
         imagenGrande.style.display = "flex";
     })
 
-    BotOM.addEventListener("click", () => {
+    BotOM?.addEventListener("click", () => {
         imagen.src = "../res/7.jpeg"; 
         imagenGrande.style.display = "flex";
     })
