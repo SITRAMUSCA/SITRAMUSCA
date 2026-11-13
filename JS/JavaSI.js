@@ -65,7 +65,8 @@ const fotosacNI=
 
 ];
 
-function Mfoto() {
+function Mfoto() 
+{
     if (fotosC.length === 0) return;
 
     fotoC.src = fotosC[indiceC];
