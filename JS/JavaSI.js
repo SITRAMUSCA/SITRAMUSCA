@@ -18,6 +18,7 @@ const BotDRP = document.getElementById("BotDRP");
 const BotRH = document.getElementById("BotRH");
 const BotCoo = document.getElementById("BotCoo");
 const BotHAL = document.getElementById("BotHAL");
+const BotML = document.getElementById("BotML");
 const BotAR14 = document.getElementById("BotAR14");
 const BotAR18 = document.getElementById("BotAR18");
 const BotGS = document.getElementById("BotGS");
@@ -174,6 +175,11 @@ function AbriC(fotos) {
         imagenGrande.style.display = "flex";
     })
 
+    BotML?.addEventListener("click", () => {
+        imagen.src = "../res/15.png"; 
+        imagenGrande.style.display = "flex";
+    })
+    
     BotGS?.addEventListener("click", () => {
         imagen.src = "../res/SITRAMUSCA.png"; 
         imagenGrande.style.display = "flex";
