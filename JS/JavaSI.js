@@ -9,6 +9,7 @@ const BotSG = document.getElementById("BotSG");
 const BotLM = document.getElementById("BotLM");
 const BotLP = document.getElementById("BotLP");
 const BotFM = document.getElementById("BotFM");
+const BotOM = document.getElementById("BotOM");
 const BotGMS = document.getElementById("BotGMS");
 const BotEC = document.getElementById("BotEC");
 const BotCEM = document.getElementById("BotCEM");
@@ -133,10 +134,10 @@ function AbriC(fotos) {
         imagenGrande.style.display = "flex";
     })
 
-    /*BotGMS.addEventListener("click", () => {
-        imagen.src = "../res/.png"; 
+    BotOM.addEventListener("click", () => {
+        imagen.src = "../res/7.jpeg"; 
         imagenGrande.style.display = "flex";
-    })*/
+    })
 
     BotEC?.addEventListener("click", () => {
         imagen.src = "../res/8.png"; 
