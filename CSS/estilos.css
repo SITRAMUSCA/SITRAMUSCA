@@ -218,12 +218,15 @@ b p {
 
 .Nuca {
   width: 700px;
-  text-align: center;
   margin: 20px 320px;
   padding: 40px;
   display: flex;
   border-radius: 19px;
   background-color: #144d2b;
+  font-size: 30px;
+  color: #fffbc9;
+  justify-content: center;
+  font-weight: bold;
 
 }
 
@@ -775,11 +778,7 @@ a {
 
 }
 
-.PeC .Botd {
 
-  padding: 20px 30px;
-
-}
 
 .Nucas .BtCon {
   
@@ -1088,6 +1087,7 @@ video {
     margin: 14px auto;
     padding: 20px 12px;
     border-radius: 14px;
+
   }
 
   .g {
